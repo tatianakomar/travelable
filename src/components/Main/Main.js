@@ -1,10 +1,12 @@
 import './Main.css';
-import About from '../About/About';
+import Map from '../Map/Map';
+import CardList from '../CardList/CardList';
 
 function Main () {
     return (
         <main>
-            <About />
+            <Map />
+            <CardList />
         </main>
     )
 }
