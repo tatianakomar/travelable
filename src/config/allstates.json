@@ -3,7 +3,7 @@
     { "id": "AK", "val": "02", "vaccine": false, "quarantine": false, "mask": true, "test": false, "distancing": true, "spaces": true },
     { "id": "AZ", "val": "04", "vaccine": false, "quarantine": false, "mask": true, "test": false, "distancing": true, "spaces": true },
     { "id": "AR", "val": "05", "vaccine": false, "quarantine": false, "mask": false, "test": false, "distancing": false, "spaces": true },
-    { "id": "CA", "val": "06", "vaccine": true, "quarantine": false, "mask": true, "test": true, "distancing": true, "spaces": true },
+    { "id": "CA", "val": "06", "vaccine": true, "quarantine": true, "mask": true, "test": true, "distancing": true, "spaces": true },
     { "id": "CO", "val": "08", "vaccine": false, "quarantine": false, "mask": true, "test": false, "distancing": false, "spaces": true },
     { "id": "CT", "val": "09", "vaccine": false, "quarantine": false, "mask": true, "test": false, "distancing": true, "spaces": true },
     { "id": "DE", "val": "10", "vaccine": true, "quarantine": false, "mask": true, "test": true, "distancing": false, "spaces": true },

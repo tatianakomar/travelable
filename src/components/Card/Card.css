@@ -1,0 +1,17 @@
+.card__image {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.card__title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #393939;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 8px;
+}
