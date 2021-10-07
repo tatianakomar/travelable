@@ -1,5 +1,6 @@
 import './Map.css';
 import React from 'react';
+// import searchIcon from '../../images/map_search-icon.svg';
 import { geoCentroid } from 'd3-geo';
 import {
   ComposableMap,
@@ -66,94 +67,100 @@ function Map () {
 
     return (
         <section className="map">
-            <div className="map__filters">
-                <div className="map__checkbox">
-                    <input type="checkbox" id="vaccine" name="vaccine" 
-                    onClick={(event)=>{
-                        setVaccineFilter(event.target.checked);
-                    }} />
-                    <label for="vaccine">proof of vaccination required</label>
+            <p className="map__title">Check the boxes to tell us what restrictions you are comfortable with, and we'll tell you what states are available to you. Or use the search so that we can show you information about the restrictions in your chosen state.</p>
+            <div className="map__container">
+                <div className="map__left-column">
+                    <input className="map__search" type="search" id="state-search" name="state-search" aria-label="Search a state" placeholder="Search" />
+                    {/* <img className="map__search-icon" src={searchIcon} alt="search"></img> */}
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="vaccine" name="vaccine" 
+                        onClick={(event)=>{
+                            setVaccineFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="vaccine">proof of vaccination required</label>
+                    </div>
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="quarantine" name="quarantine"
+                        onClick={(event)=>{
+                            setQuarantineFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="quarantine">quarantine required</label>
+                    </div>
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="mask" name="mask"
+                        onClick={(event)=>{
+                            setMaskFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="mask">mask-wearing enforced</label>
+                    </div>
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="test" name="test"
+                        onClick={(event)=>{
+                            setTestFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="test">testing required</label>
+                    </div>
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="distancing" name="distancing"
+                        onClick={(event)=>{
+                            setDistancingFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="distancing">social distancing required</label>
+                    </div>
+                    <div className="map__checkbox">
+                        <input className="map__input" type="checkbox" id="spaces" name="spaces"
+                        onClick={(event)=>{
+                            setSpacesFilter(event.target.checked);
+                        }} />
+                        <label htmlFor="spaces">public spaces open</label>
+                    </div>
                 </div>
-                <div className="map__checkbox">
-                    <input type="checkbox" id="quarantine" name="quarantine"
-                    onClick={(event)=>{
-                        setQuarantineFilter(event.target.checked);
-                    }} />
-                    <label for="quarantine">quarantine required</label>
-                </div>
-                <div className="map__checkbox">
-                    <input type="checkbox" id="mask" name="mask"
-                    onClick={(event)=>{
-                        setMaskFilter(event.target.checked);
-                    }} />
-                    <label for="mask">mask-wearing enforced</label>
-                </div>
-                <div className="map__checkbox">
-                    <input type="checkbox" id="test" name="test"
-                    onClick={(event)=>{
-                        setTestFilter(event.target.checked);
-                    }} />
-                    <label for="test">testing required</label>
-                </div>
-                <div className="map__checkbox">
-                    <input type="checkbox" id="distancing" name="distancing"
-                    onClick={(event)=>{
-                        setDistancingFilter(event.target.checked);
-                    }} />
-                    <label for="distancing">social distancing required</label>
-                </div>
-                <div className="map__checkbox">
-                    <input type="checkbox" id="spaces" name="spaces"
-                    onClick={(event)=>{
-                        setSpacesFilter(event.target.checked);
-                    }} />
-                    <label for="spaces">public spaces open</label>
-                </div>
+                <ComposableMap className="map__chart" projection="geoAlbersUsa">
+                    <Geographies geography={geoUrl}>
+                        {({ geographies }) => (
+                        <>
+                            {geographies.map(geo => (
+                            <Geography
+                                key={geo.rsmKey}
+                                stroke="#FFF"
+                                geography={geo}
+                                fill={getStateColor(geo, vaccineFilter, quarantineFilter, maskFilter, testFilter, distancingFilter, spacesFilter)}
+                            />
+                            ))}
+                            {geographies.map(geo => {
+                            const centroid = geoCentroid(geo);
+                            const cur = allStates.find(s => s.val === geo.id);
+                            return (
+                                <g key={geo.rsmKey + "-name"}>
+                                {cur &&
+                                    centroid[0] > -160 &&
+                                    centroid[0] < -67 &&
+                                    (Object.keys(offsets).indexOf(cur.id) === -1 ? (
+                                    <Marker coordinates={centroid}>
+                                        <text y="2" fontSize={14} textAnchor="middle">
+                                        {cur.id}
+                                        </text>
+                                    </Marker>
+                                    ) : (
+                                    <Annotation
+                                        subject={centroid}
+                                        dx={offsets[cur.id][0]}
+                                        dy={offsets[cur.id][1]}
+                                    >
+                                        <text x={4} fontSize={14} alignmentBaseline="middle">
+                                        {cur.id}
+                                        </text>
+                                    </Annotation>
+                                    ))}
+                                </g>
+                            );
+                            })}
+                        </>
+                        )}
+                    </Geographies>
+                </ComposableMap>
             </div>
-            <ComposableMap className="map__container" projection="geoAlbersUsa">
-                <Geographies geography={geoUrl}>
-                    {({ geographies }) => (
-                    <>
-                        {geographies.map(geo => (
-                        <Geography
-                            key={geo.rsmKey}
-                            stroke="#FFF"
-                            geography={geo}
-                            fill={getStateColor(geo, vaccineFilter, quarantineFilter, maskFilter, testFilter, distancingFilter, spacesFilter)}
-                        />
-                        ))}
-                        {geographies.map(geo => {
-                        const centroid = geoCentroid(geo);
-                        const cur = allStates.find(s => s.val === geo.id);
-                        return (
-                            <g key={geo.rsmKey + "-name"}>
-                            {cur &&
-                                centroid[0] > -160 &&
-                                centroid[0] < -67 &&
-                                (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                                <Marker coordinates={centroid}>
-                                    <text y="2" fontSize={14} textAnchor="middle">
-                                    {cur.id}
-                                    </text>
-                                </Marker>
-                                ) : (
-                                <Annotation
-                                    subject={centroid}
-                                    dx={offsets[cur.id][0]}
-                                    dy={offsets[cur.id][1]}
-                                >
-                                    <text x={4} fontSize={14} alignmentBaseline="middle">
-                                    {cur.id}
-                                    </text>
-                                </Annotation>
-                                ))}
-                            </g>
-                        );
-                        })}
-                    </>
-                    )}
-                </Geographies>
-            </ComposableMap>
+            <button className="map__button">check states</button>
         </section>
     )
 }
