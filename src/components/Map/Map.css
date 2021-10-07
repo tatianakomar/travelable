@@ -22,9 +22,12 @@
 }
 
 .map__search {
+    position: relative;
+}
+
+.map__search-input {
     width: 410px;
     height: 64px;
-    position: relative;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 29px;
@@ -35,27 +38,20 @@
     border-radius: 16px;
     margin: 0;
     padding: 10px 10px 10px 60px;
+    outline-color: #CC8528;
     margin-bottom: 75px;
 }
 
-.map__search:before {
-    content: url(../../images/map_search-icon.svg);
-    /* width: 40px;
-    height: 40px; */
-    display: block;
+.map__search-icon {
     position: absolute;
-    top: o;
-    left: 0;
-    z-index: 5;
+    top: 10px;
+    left: 10px;
 }
 
-/* .map__search-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-
 .map__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -66,20 +62,50 @@
     margin: 0;
     padding: 0;
     margin-bottom: 48px;
+    padding-left: 32px;
 }
 
-.map__input {
+.map__checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.map__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 24px;
     height: 24px;
     background-color: #fff;
     border: 1px solid #0A3655;
     box-sizing: border-box;
     border-radius: 4px;
-    margin-right: 32px;
 }
 
-.map__input:checked {
+.map__checkbox input:checked ~ .map__checkmark {
     background-color: #0A3655;
+}
+
+.map__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.map__checkbox input:checked ~ .map__checkmark:after {
+    display: block;
+}
+
+.map__checkbox .map__checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 13px;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
 }
 
 .map__chart {
@@ -95,10 +121,26 @@
     font-size: 24px;
     line-height: 29px;
     font-weight: 300;
-    color: #737373;
+    color: #C9A575;
     background-color: #EEC288;
     border: none;
     border-radius: 8px;
     margin: 0;
     padding: 10px;
+    cursor: pointer;
+}
+
+.map__button_active {
+    color: #fff;
+    background-color: #CC8528;
+}
+
+.map__button:hover {
+    color: #fff;
+    background-color: #C67000;
+}
+
+.map__button:active {
+    color: #fff;
+    background-color: #814901;
 }

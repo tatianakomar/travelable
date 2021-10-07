@@ -1,6 +1,6 @@
 import './Map.css';
 import React from 'react';
-// import searchIcon from '../../images/map_search-icon.svg';
+import searchIcon from '../../images/map_search-icon.svg';
 import { geoCentroid } from 'd3-geo';
 import {
   ComposableMap,
@@ -64,56 +64,65 @@ function Map () {
     const [testFilter, setTestFilter ] = React.useState(false);
     const [distancingFilter, setDistancingFilter ] = React.useState(false);
     const [spacesFilter, setSpacesFilter ] = React.useState(false);
+    const [isChecked, setIsChecked] = React.useState(false);
 
     return (
         <section className="map">
             <p className="map__title">Check the boxes to tell us what restrictions you are comfortable with, and we'll tell you what states are available to you. Or use the search so that we can show you information about the restrictions in your chosen state.</p>
             <div className="map__container">
                 <div className="map__left-column">
-                    <input className="map__search" type="search" id="state-search" name="state-search" aria-label="Search a state" placeholder="Search" />
-                    {/* <img className="map__search-icon" src={searchIcon} alt="search"></img> */}
-                    <div className="map__checkbox">
+                    <div className="map__search">
+                        <input className="map__search-input" type="search" id="state-search" name="state-search" aria-label="Search a state" placeholder="Search" />
+                        <img className="map__search-icon" src={searchIcon} alt="search"></img>
+                    </div>
+                    <label className="map__checkbox">proof of vaccination required
                         <input className="map__input" type="checkbox" id="vaccine" name="vaccine" 
-                        onClick={(event)=>{
-                            setVaccineFilter(event.target.checked);
-                        }} />
-                        <label htmlFor="vaccine">proof of vaccination required</label>
-                    </div>
-                    <div className="map__checkbox">
-                        <input className="map__input" type="checkbox" id="quarantine" name="quarantine"
-                        onClick={(event)=>{
-                            setQuarantineFilter(event.target.checked);
-                        }} />
-                        <label htmlFor="quarantine">quarantine required</label>
-                    </div>
-                    <div className="map__checkbox">
-                        <input className="map__input" type="checkbox" id="mask" name="mask"
+                            onClick={(event)=>{
+                                setVaccineFilter(event.target.checked);
+                                setIsChecked(true);
+                            }} />
+                        <span className="map__checkmark"></span>   
+                    </label>
+                    <label className="map__checkbox">quarantine required
+                        <input type="checkbox" id="quarantine" name="quarantine"
+                            onClick={(event)=>{
+                                setQuarantineFilter(event.target.checked);
+                                setIsChecked(true);
+                            }} />
+                        <span className="map__checkmark"></span>   
+                    </label>
+                    <label className="map__checkbox">mask-wearing enforced
+                        <input type="checkbox" id="mask" name="mask"
                         onClick={(event)=>{
                             setMaskFilter(event.target.checked);
+                            setIsChecked(true);
                         }} />
-                        <label htmlFor="mask">mask-wearing enforced</label>
-                    </div>
-                    <div className="map__checkbox">
-                        <input className="map__input" type="checkbox" id="test" name="test"
+                        <span className="map__checkmark"></span>   
+                    </label>
+                    <label className="map__checkbox">testing required
+                        <input type="checkbox" id="test" name="test"
                         onClick={(event)=>{
                             setTestFilter(event.target.checked);
+                            setIsChecked(true);
                         }} />
-                        <label htmlFor="test">testing required</label>
-                    </div>
-                    <div className="map__checkbox">
-                        <input className="map__input" type="checkbox" id="distancing" name="distancing"
+                        <span className="map__checkmark"></span>   
+                    </label>
+                    <label className="map__checkbox">social distancing required
+                        <input type="checkbox" id="distancing" name="distancing"
                         onClick={(event)=>{
                             setDistancingFilter(event.target.checked);
+                            setIsChecked(true);
                         }} />
-                        <label htmlFor="distancing">social distancing required</label>
-                    </div>
-                    <div className="map__checkbox">
-                        <input className="map__input" type="checkbox" id="spaces" name="spaces"
+                        <span className="map__checkmark"></span>   
+                    </label>
+                    <label className="map__checkbox">public spaces open
+                        <input type="checkbox" id="spaces" name="spaces"
                         onClick={(event)=>{
                             setSpacesFilter(event.target.checked);
+                            setIsChecked(true);
                         }} />
-                        <label htmlFor="spaces">public spaces open</label>
-                    </div>
+                        <span className="map__checkmark"></span>   
+                    </label>
                 </div>
                 <ComposableMap className="map__chart" projection="geoAlbersUsa">
                     <Geographies geography={geoUrl}>
@@ -123,6 +132,7 @@ function Map () {
                             <Geography
                                 key={geo.rsmKey}
                                 stroke="#FFF"
+                                outline="none"
                                 geography={geo}
                                 fill={getStateColor(geo, vaccineFilter, quarantineFilter, maskFilter, testFilter, distancingFilter, spacesFilter)}
                             />
@@ -137,7 +147,7 @@ function Map () {
                                     centroid[0] < -67 &&
                                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
                                     <Marker coordinates={centroid}>
-                                        <text y="2" fontSize={14} textAnchor="middle">
+                                        <text y="2" fontSize={14} fontFamily='Roboto' textAnchor="middle" >
                                         {cur.id}
                                         </text>
                                     </Marker>
@@ -147,7 +157,7 @@ function Map () {
                                         dx={offsets[cur.id][0]}
                                         dy={offsets[cur.id][1]}
                                     >
-                                        <text x={4} fontSize={14} alignmentBaseline="middle">
+                                        <text x={4} fontSize={14} fontFamily='Roboto' alignmentBaseline="middle">
                                         {cur.id}
                                         </text>
                                     </Annotation>
@@ -160,7 +170,7 @@ function Map () {
                     </Geographies>
                 </ComposableMap>
             </div>
-            <button className="map__button">check states</button>
+            <button className={`map__button ${isChecked ? "map__button_active" : ""}`} type="submit" disabled={!isChecked} >check states</button>
         </section>
     )
 }
