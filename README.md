@@ -19,7 +19,7 @@ Designed and developed as part of the ***Practicum by Yandex*** International Co
 
 ## Features
 - Interactive map with selectors
-- 
+
 ## Designs
 [Link to the project on Figma](https://www.figma.com/file/g5e3Rzr87NSfGUDlINfyH2/code-jam?node-id=218%3A1252)
 
