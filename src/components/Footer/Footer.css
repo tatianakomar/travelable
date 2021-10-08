@@ -1,0 +1,151 @@
+.footer {
+  max-width: 1440px;
+  height: 272px;
+  font-family: 'Montserrat', sans-serif;
+  background: #0A3655;
+  color: white;
+  margin: auto;
+}
+
+.footer_logo {
+  max-width: 193px;
+  margin-top: 77px;
+  margin-left: 80px;
+  margin-right: 133px;
+  margin-bottom: 70px;
+  /*margin bottom needs looked at, doesn't match brief*/
+}
+
+/*.footer__content {
+  
+}
+
+.footer__column {
+
+}
+
+.footer__column_list {
+
+}*/
+
+.footer__menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+  /*removing text decoration not working?*/
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.footer__copyright {
+  max-width: 193px;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.footer__terms {
+  color: white;
+  transition: opacity 0.3s linear;
+  /*why do i need to add text color to every single element?*/
+}
+
+.footer__terms:hover {
+  opacity: 0.6;
+}
+
+.footer__privacy {
+  color: white;
+  transition: opacity 0.3s linear;
+}
+
+.footer__privacy:hover {
+  opacity: 0.6;
+}
+
+.footer__covid {
+  color: white;
+  transition: opacity 0.3s linear;
+}
+
+.footer__covid:hover {
+  opacity: 0.6;
+}
+
+.footer__contact {
+  color: white;
+  transition: opacity 0.3s linear;
+}
+
+.footer__contact:hover {
+  opacity: 0.6;
+}
+
+.footer__input {
+  width: 411px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 4px;
+} /*why is width not implemented?*/
+
+
+.button, input {
+  width: 411px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.button {
+  width: 193px;
+  height: 48px;
+  background: #CC8528;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+  margin-left: 24px;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: #945d14;
+}
+
+
+.footer__row {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__apps {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer__app-icons {
+  transition: opacity 0.3s linear;
+}
+
+.footer__app-icons:hover {
+  opacity: 0.6;
+}
+
+.footer__column-link {
+
+}
