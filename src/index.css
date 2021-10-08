@@ -2,4 +2,20 @@
 /* @import url(./vendor/fonts/fonts.css); */
 @import url(./components/Header/Header.css);
 @import url(./components/About/About.css);
+
 @import url(./components/Footer/Footer.css);
+@import url(./components/Footer/button/button.css);
+@import url(./components/Footer/_logo/footer_logo.css);
+@import url(./components/Footer/__row/footer__row.css);
+@import url(./components/Footer/_logo/footer_logo.css);
+@import url(./components/Footer/__input/footer__input.css);
+
+@import url(./components/Footer/__apps/footer__apps.css);
+@import url(./components/Footer/__column_link/footer__column_link.css);
+@import url(./components/Footer/__app_icons/footer__app_icons.css);
+@import url(./components/Footer/__menu/footer__menu.css);
+@import url(./components/Footer/__copyright/footer__copyright.css);
+@import url(./components/Footer/__terms/footer__terms.css);
+@import url(./components/Footer/__privacy/footer__privacy.css);
+@import url(./components/Footer/__covid/footer__covid.css);
+@import url(./components/Footer/__contact/footer__contact.css);

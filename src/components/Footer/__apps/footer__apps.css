@@ -1,0 +1,14 @@
+.footer__apps {
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 133px;
+  }
+  
+  .footer__app-icons {
+    transition: opacity 0.3s linear;
+  }
+  
+  .footer__app-icons:hover {
+    opacity: 0.6;
+  }

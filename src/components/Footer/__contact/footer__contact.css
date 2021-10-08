@@ -1,0 +1,8 @@
+.footer__contact {
+    color: white;
+    transition: opacity 0.3s linear;
+  }
+  
+  .footer__contact:hover {
+    opacity: 0.6;
+  }

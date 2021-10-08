@@ -3,8 +3,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__content">
-        <nav className="footer__column footer__column__list">
+
           <ul className="footer__row">
             <li>
               <img className="footer_logo" src="images/footer_logo.svg" alt="Travel Able text logo"></img>
@@ -19,28 +18,21 @@ function Footer() {
             </li>
 
 
-
-
-
             <ul className="footer__apps">
               <li>
-                <a href="" class="footer__column-link" target="_blank">
-                  <img src="images/app_store.svg" class="footer__app-icons"
+                <a href="" class="footer__column_link" target="_blank">
+                  <img src="images/app_store.svg" class="footer__app_icons"
                     alt="Apple App Store icon, white outline of an apple"></img>
                 </a>
               </li>
               <li>
-                <a href="" class="footer__column-link" target="_blank">
-                  <img src="images/google_play.svg" class="footer__app-icons"
+                <a href="" class="footer__column_link" target="_blank">
+                  <img src="images/google_play.svg" class="footer__app_icons"
                     alt="Google Play background"></img>
                 </a>
               </li>
             </ul>
           </ul>
-        </nav>
-
-
-
 
 
         <ul className="footer__menu">
@@ -59,15 +51,6 @@ function Footer() {
           </a>
         </ul>
 
-
-
-
-        <nav class="footer__column footer__column_content_apps">
-          <ul class="footer__list">
-
-          </ul>
-        </nav>
-      </div>
     </footer>
   )
 }

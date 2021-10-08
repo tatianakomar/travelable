@@ -1,0 +1,8 @@
+.footer__privacy {
+    color: white;
+    transition: opacity 0.3s linear;
+  }
+  
+  .footer__privacy:hover {
+    opacity: 0.6;
+  }

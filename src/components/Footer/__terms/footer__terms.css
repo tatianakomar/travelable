@@ -1,0 +1,9 @@
+.footer__terms {
+    color: white;
+    transition: opacity 0.3s linear;
+    /*why do i need to add text color to every single element?*/
+  }
+
+  .footer__terms:hover {
+    opacity: 0.6;
+  }
