@@ -18,6 +18,11 @@ Designed and developed as part of the ***Practicum by Yandex*** International Co
 [See the live Github page here](https://tatianakomar.github.io/travelable/)
 ## Run Locally
 Run `yarn start` for development mode and view the project at http://localhost:3000.
+### Deployment
+Add to package.json
+`"homepage": "https://tatianakomar.github.io/travelable",`
+Run in terminal
+`npm run deploy`
 ## Next Steps
 - Implement scrolling animation in header image
 - Include link destinations to all links
