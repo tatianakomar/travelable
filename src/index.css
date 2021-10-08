@@ -1,5 +1,19 @@
 @import url(./vendor/normalize.css);
-/* @import url(./vendor/fonts/fonts.css); */
+@import url(./vendor/fonts/fonts.css);
+
 @import url(./components/Header/Header.css);
+@import url(./components/Header/__overlay/header__overlay.css);
+@import url(./components/Header/carousel/carousel.css);
+@import url(./components/Header/__nav/header__nav.css);
+@import url(./components/Header/_logo/header_logo.css);
+@import url(./components/Header/__nav_menu/header__nav_menu.css);
+@import url(./components/Header/_eye/_eye.css);
+@import url(./components/Header/_planet/_planet.css);
+@import url(./components/Header/__text/header__text.css);
+@import url(./components/Header/__paragraph/header__paragraph.css);
+@import url(./components/Header/__restrictions/header__restrictions.css);
+@import url(./components/Header/restriction-number/restriction-number.css);
+
 @import url(./components/About/About.css);
+
 @import url(./components/Footer/Footer.css);

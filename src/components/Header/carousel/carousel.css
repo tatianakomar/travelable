@@ -1,0 +1,33 @@
+.carousel {
+    display: flex;
+    animation: sliding linear 12s infinite;
+    transition: 1s;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+   }
+    .alaska {
+      background-image: url("/src/images/alaska.png");
+      position: relative;
+    }
+    .arizona {
+      background-image: url("/src/images/arizona.png");
+      position: relative;
+    }
+    .idaho {
+      background-image: url("/src/images/idaho.png");
+      position: relative;
+    }
+    .wyoming {
+      background-image: url("/src/images/wyoming.png");
+      position: relative;
+    }
+    .hawaii {
+      background-image: url("/src/images/hawaii.png");
+      position: relative;
+    }
+    .iowa {
+      background-image: url("/src/images/iowa.png");
+      position: relative;
+    }

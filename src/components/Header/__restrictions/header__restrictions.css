@@ -1,0 +1,11 @@
+.header__restrictions {
+    max-width: 1063px;
+    height: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
