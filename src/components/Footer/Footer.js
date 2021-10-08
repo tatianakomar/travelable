@@ -9,25 +9,26 @@ function Footer() {
               <img className="footer_logo" src="images/footer_logo.svg" alt="Travel Able text logo"></img>
             </li>
 
-            <li className="footer__input">
+            <div className="footer__input">
+              <div className="footer__input_email">
               <input type="email" id="email" name="email" placeholder="email"></input>
-            </li>
-            <li>
               <a href=""
-                class="button" target="_blank">subscribe</a>
-            </li>
+                className="button" target="_blank">Subscribe</a>
+                </div>
+                <p className="footer__input_text">Subscribe and you will be the first to know about changes</p>
+            </div>
 
 
             <ul className="footer__apps">
               <li>
-                <a href="" class="footer__column_link" target="_blank">
-                  <img src="images/app_store.svg" class="footer__app_icons"
+                <a href="" className="footer__column_link" target="_blank">
+                  <img src="images/app_store.svg" className="footer__app_icons"
                     alt="Apple App Store icon, white outline of an apple"></img>
                 </a>
               </li>
               <li>
-                <a href="" class="footer__column_link" target="_blank">
-                  <img src="images/google_play.svg" class="footer__app_icons"
+                <a href="" className="footer__column_link" target="_blank">
+                  <img src="images/google_play.svg" className="footer__app_icons"
                     alt="Google Play background"></img>
                 </a>
               </li>

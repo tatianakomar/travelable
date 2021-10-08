@@ -1,0 +1,4 @@
+.footer__input_email {
+  display: inline-flex;
+  flex-direction: row;
+}

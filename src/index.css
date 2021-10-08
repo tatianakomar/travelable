@@ -9,7 +9,8 @@
 @import url(./components/Footer/__row/footer__row.css);
 @import url(./components/Footer/_logo/footer_logo.css);
 @import url(./components/Footer/__input/footer__input.css);
-
+@import url(./components/Footer/__input_email/footer__input_email.css);
+@import url(./components/Footer/__input_text/footer__input_text.css);
 @import url(./components/Footer/__apps/footer__apps.css);
 @import url(./components/Footer/__column_link/footer__column_link.css);
 @import url(./components/Footer/__app_icons/footer__app_icons.css);
