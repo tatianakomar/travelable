@@ -1,10 +1,10 @@
 .footer__menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     text-decoration: none;
-    /*removing text decoration not working?*/
     color: white;
     margin: 0;
     padding: 0;
+    padding-top: 46px;
   }

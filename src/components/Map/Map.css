@@ -15,7 +15,7 @@
 }
 
 .map__title {
-    max-width: 410px;
+    max-width: 411px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 29px;
@@ -105,7 +105,7 @@
 }
 
 .map__button {
-    width: 410px;
+    width: 411px;
     height: 72px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -147,7 +147,7 @@
 }
 
 .map__search-input {
-    width: 410px;
+    width: 411px;
     height: 64px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;

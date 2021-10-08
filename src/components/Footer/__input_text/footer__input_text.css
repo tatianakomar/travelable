@@ -1,5 +1,9 @@
 .footer__input_text {
   display: flex;
-  justify-content: center;
   margin-top: 8px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-left: 60px;
 }

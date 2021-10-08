@@ -97,7 +97,7 @@ function Map ({setShowCards,setSelectedStates}) {
                 <div className="map__left-column">
                     <p className="map__title">Check the boxes to tell us what restrictions you are comfortable with:</p>
                     <button className="map__clear-filters" type="button" onClick={resetFilters}>Clear filters</button>
-                    <label className="map__checkbox">proof of vaccination required
+                    <label className="map__checkbox"> no proof of vaccination required
                         <input className="map__input" type="checkbox" id="vaccine" name="vaccine" checked={vaccineFilter}
                         onChange={(event)=>{
                             setVaccineFilter(event.target.checked);
@@ -105,28 +105,28 @@ function Map ({setShowCards,setSelectedStates}) {
                         <span className="map__checkmark"></span>
                         <img className="map__question-mark" src={questionMark} alt="question"></img>   
                     </label>
-                    <label className="map__checkbox">quarantine required
+                    <label className="map__checkbox"> no quarantine requirements
                         <input type="checkbox" id="quarantine" name="quarantine" checked={quarantineFilter}
                         onChange={(event)=>{
                             setQuarantineFilter(event.target.checked);
                         }} />
                         <span className="map__checkmark"></span> 
                     </label>
-                    <label className="map__checkbox">mask-wearing indoor enforced
+                    <label className="map__checkbox">masks are not required indoor
                         <input type="checkbox" id="mask" name="mask" checked={maskFilter}
                         onChange={(event)=>{
                             setMaskFilter(event.target.checked);  
                         }} />
                         <span className="map__checkmark"></span>   
                     </label>
-                    <label className="map__checkbox">testing required
+                    <label className="map__checkbox">no testing requirements
                         <input type="checkbox" id="test" name="test" checked={testFilter}
                         onChange={(event)=>{
                             setTestFilter(event.target.checked);
                         }} />
                         <span className="map__checkmark"></span>   
                     </label>
-                    <label className="map__checkbox">social distancing required
+                    <label className="map__checkbox">no social distancing requirements
                         <input type="checkbox" id="distancing" name="distancing" checked={distancingFilter}
                         onChange={(event)=>{
                             setDistancingFilter(event.target.checked);
