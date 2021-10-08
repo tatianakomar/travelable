@@ -1,51 +1,43 @@
 .map {
     max-width: 1440px;
     margin: auto;
-    padding: 60px 80px 40px;
-}
-
-.map__title {
-    max-width: 955px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000;
-    margin: 0;
-    padding: 0;
+    padding: 160px 80px 160px;
 }
 
 .map__container {
     display: flex;
     justify-content: space-between;
-    margin-top: 52px;
 }
 
-.map__search {
-    position: relative;
+.map__left-column {
+    display: flex;
+    flex-direction: column;
 }
 
-.map__search-input {
-    width: 410px;
-    height: 64px;
+.map__title {
+    max-width: 410px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 29px;
-    font-weight: 300;
-    color: #737373;
-    background-color: #EBEBEB;
-    border: none;
-    border-radius: 16px;
+    font-weight: 400;
+    color: #000;
     margin: 0;
-    padding: 10px 10px 10px 60px;
-    outline-color: #CC8528;
-    margin-bottom: 75px;
+    padding: 0;
+    margin-bottom: 12px;
 }
 
-.map__search-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.map__clear-filters {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #CC8528;
+    border: none;
+    background: none;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
 }
 
 .map__checkbox {
@@ -108,10 +100,8 @@
     transform: rotate(45deg);
 }
 
-.map__chart {
-    width: 845px;
-    height: 636px;
-    margin-top: -30px;
+.map__question-mark {
+    margin-left: 10px;
 }
 
 .map__button {
@@ -128,6 +118,7 @@
     margin: 0;
     padding: 10px;
     cursor: pointer;
+    margin-top: 18px;
 }
 
 .map__button_active {
@@ -143,4 +134,43 @@
 .map__button:active {
     color: #fff;
     background-color: #814901;
+}
+
+.map__right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map__search {
+    position: relative;
+}
+
+.map__search-input {
+    width: 410px;
+    height: 64px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #737373;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 16px;
+    margin: 0;
+    padding: 10px 10px 10px 60px;
+    outline-color: #CC8528;
+    margin-bottom: 64px;
+}
+
+.map__search-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.map__chart {
+    width: 845px;
+    height: 550px;
+    margin-top: -30px;
 }
