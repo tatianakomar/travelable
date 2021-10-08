@@ -1,0 +1,9 @@
+.header_planet {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s linear;
+  }
+  
+  .header_planet:hover {
+    opacity: 0.6;
+  }

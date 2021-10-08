@@ -1,0 +1,102 @@
+.header {
+  max-width: 1440px;
+  height: 822px;
+  color: white;
+  margin: auto;
+}
+/*
+.header__overlay > figure {
+  width: 1440px;
+  height: 822px;
+  animation: imageAnimation 10s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  color: transparent;
+  opacity: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.header__overlay > figure:nth-child(1) { background-image: url('/src/images/idaho.png')};
+
+.header__overlay > figure:nth-child(2) {
+  background-image: url('/src/images/alaska.png');
+}
+
+.header__overlay > figure:nth-child(3) {
+  background-image: url('/src/images/hawaii.png');
+}
+
+.header__overlay > figure:nth-child(4) {
+  background-image: url('/src/images/iowa.png');
+}
+
+.header__overlay > figure:nth-child(5) {
+  background-image: url('/src/images/wyoming.png');
+}
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0.5;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0.5;
+}
+ 100% {
+ opacity: 0.5;
+}
+}
+*/
+
+/*@media screen and (max-width: 375px) {
+ 
+  .carousel-wrapper {
+    width: 240px * 1.3;
+    height: 150px* 1.4;
+  }
+
+  .carousel-container {
+    width: $size-width;
+    height: $size-height;
+  }
+
+  .carousel {
+    width: $size-width * 3;
+    > div {
+      width: $size-width;
+      height: $size-height;
+    }
+  }
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(width);
+    }
+    65% {
+      transform: translateX(width);
+    }
+    70% {
+      transform: translateX(width * 2);
+    }
+    98% {
+      transform: translateX(width * 2);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }*/

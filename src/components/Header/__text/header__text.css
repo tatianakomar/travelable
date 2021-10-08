@@ -1,0 +1,12 @@
+.header__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 138px;
+    margin-bottom: 120px;
+    /*need to revisit margin bottom, layout doesn't seem right*/
+  }
