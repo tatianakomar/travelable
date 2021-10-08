@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/travelable/static/css/main.1facaee7.chunk.css",
+    "main.js": "/travelable/static/js/main.e7605f4a.chunk.js",
+    "main.js.map": "/travelable/static/js/main.e7605f4a.chunk.js.map",
+    "runtime-main.js": "/travelable/static/js/runtime-main.6bee27a3.js",
+    "runtime-main.js.map": "/travelable/static/js/runtime-main.6bee27a3.js.map",
+    "static/js/2.646e476b.chunk.js": "/travelable/static/js/2.646e476b.chunk.js",
+    "static/js/2.646e476b.chunk.js.map": "/travelable/static/js/2.646e476b.chunk.js.map",
+    "static/js/3.52a3ae55.chunk.js": "/travelable/static/js/3.52a3ae55.chunk.js",
+    "static/js/3.52a3ae55.chunk.js.map": "/travelable/static/js/3.52a3ae55.chunk.js.map",
+    "index.html": "/travelable/index.html",
+    "static/css/main.1facaee7.chunk.css.map": "/travelable/static/css/main.1facaee7.chunk.css.map",
+    "static/js/2.646e476b.chunk.js.LICENSE.txt": "/travelable/static/js/2.646e476b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/travelable/static/media/wyoming.0ac378b9.png",
+    "static/media/card-list_airbnb-logo.189f6471.svg": "/travelable/static/media/card-list_airbnb-logo.189f6471.svg",
+    "static/media/card-list_booking-logo.13700950.svg": "/travelable/static/media/card-list_booking-logo.13700950.svg",
+    "static/media/cardlist_bridge.59d53784.png": "/travelable/static/media/cardlist_bridge.59d53784.png",
+    "static/media/cardlist_mojave.bf3895ee.png": "/travelable/static/media/cardlist_mojave.bf3895ee.png",
+    "static/media/cardlist_sequoia.7a933af0.png": "/travelable/static/media/cardlist_sequoia.7a933af0.png",
+    "static/media/map_question-mark.129c7b4e.svg": "/travelable/static/media/map_question-mark.129c7b4e.svg",
+    "static/media/map_search-icon.c42b7a08.svg": "/travelable/static/media/map_search-icon.c42b7a08.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bee27a3.js",
+    "static/js/2.646e476b.chunk.js",
+    "static/css/main.1facaee7.chunk.css",
+    "static/js/main.e7605f4a.chunk.js"
+  ]
+}
