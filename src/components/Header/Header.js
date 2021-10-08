@@ -4,13 +4,13 @@ function Header() {
     return (
         <header className="header">
             <div className="header__overlay">
-                <div class="carousel">
-                    <div class="alaska"></div>
-                    <div class="arizona"></div>
-                    <div class="idaho"></div>
-                    <div class="wyoming"></div>
-                    <div class="hawaii"></div>
-                    <div class="iowa"></div>
+                <div className="carousel">
+                    <div className="alaska"></div>
+                    <div className="arizona"></div>
+                    <div className="idaho"></div>
+                    <div className="wyoming"></div>
+                    <div className="hawaii"></div>
+                    <div className="iowa"></div>
                 </div>
 
                 <section className="header__nav">
