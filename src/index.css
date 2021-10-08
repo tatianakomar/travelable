@@ -1,6 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
 
+
 @import url(./components/Header/Header.css);
 @import url(./components/Header/__overlay/header__overlay.css);
 @import url(./components/Header/carousel/carousel.css);
@@ -13,7 +14,11 @@
 @import url(./components/Header/__paragraph/header__paragraph.css);
 @import url(./components/Header/__restrictions/header__restrictions.css);
 @import url(./components/Header/restriction-number/restriction-number.css);
-
 @import url(./components/About/About.css);
-
 @import url(./components/Footer/Footer.css);
+
+/* @import url(./components/Header/Header.css); */
+@import url(./components/Map/Map.css);
+@import url(./components/CardList/CardList.css);
+/* @import url(./components/Footer/Footer.css); */
+

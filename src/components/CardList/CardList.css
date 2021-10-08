@@ -1,0 +1,89 @@
+.card-list {
+    max-width: 1440px;
+    margin: auto;
+    padding: 35px 80px 110px 80px;
+    margin-top: -140px;
+}
+
+.card-list__title {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #393939;
+    margin: 0;
+    padding: 0;
+}
+
+.card-list__link {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #CC8528;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.card-list__subtitle {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #000;
+    margin: 64px 0 44px;
+    padding: 0;
+    text-align: center;
+}
+
+.card-list__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 64px;
+}
+
+.card-list__text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #000;
+    margin: 64px 0 44px;
+    padding: 0;
+    text-align: center;
+}
+
+.card-list__offers {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-list__offer {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #CC8528;
+    border: 1px solid #CC8528;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 302px;
+    height: 67px;
+}
+
+.card-list__offer-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
