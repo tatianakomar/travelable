@@ -5,8 +5,11 @@ Using our service, you can find out which restrictions US states have introduced
 Designed and developed as part of the ***Practicum by Yandex*** International Code Jam, October 2021.
 ## Development Team
 [**Anastasia Vyshnevaya**](https://www.behance.net/A__V) - UX/UI Designer, Russia
+
 [**Tanya Komar**](https://github.com/tatianakomar) - Web Developer, USA
+
 [**Sara Ward**](https://github.com/warsdd) - Web Developer, UK
+
 ## Built With
 [Create React App](https://github.com/facebook/create-react-app)
 ## Features
