@@ -1,0 +1,27 @@
+.button, input {
+    width: 411px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+
+  .button {
+    width: 193px;
+    height: 48px;
+    background: #CC8528;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s linear;
+    cursor: pointer;
+    margin-left: 24px;
+    padding: 0;
+  }
+  
+  .button:hover {
+    background-color: #945d14;
+  }

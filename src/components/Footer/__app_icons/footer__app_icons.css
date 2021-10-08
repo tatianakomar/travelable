@@ -1,0 +1,7 @@
+.footer__app_icons {
+    transition: opacity 0.3s linear;
+  }
+  
+  .footer__app_icons:hover {
+    opacity: 0.6;
+  }

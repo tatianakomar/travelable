@@ -1,0 +1,6 @@
+.footer__apps {
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 133px;
+  }

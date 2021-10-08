@@ -1,0 +1,8 @@
+.footer__covid {
+    color: white;
+    transition: opacity 0.3s linear;
+  }
+  
+  .footer__covid:hover {
+    opacity: 0.6;
+  }
