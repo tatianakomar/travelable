@@ -1,10 +1,22 @@
+@import url(./__overlay/header__overlay.css);
+@import url(./carousel/carousel.css);
+@import url(./__nav/header__nav.css);
+@import url(./_logo/header_logo.css);
+@import url(./__nav_menu/header__nav_menu.css);
+@import url(./_eye/_eye.css);
+@import url(./_planet/_planet.css);
+@import url(./__text/header__text.css);
+@import url(./__paragraph/header__paragraph.css);
+@import url(./__restrictions/header__restrictions.css);
+@import url(./restriction-number/restriction-number.css);
+
 .header {
   max-width: 1440px;
   height: 822px;
   color: white;
   margin: auto;
 }
-/*
+/* TODO
 .header__overlay > figure {
   width: 1440px;
   height: 822px;

@@ -1,45 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
-
-
 @import url(./components/Header/Header.css);
-/* TODO Sara please move the following files to Header.css  */
-@import url(./components/Header/__overlay/header__overlay.css);
-@import url(./components/Header/carousel/carousel.css);
-@import url(./components/Header/__nav/header__nav.css);
-@import url(./components/Header/_logo/header_logo.css);
-@import url(./components/Header/__nav_menu/header__nav_menu.css);
-@import url(./components/Header/_eye/_eye.css);
-@import url(./components/Header/_planet/_planet.css);
-@import url(./components/Header/__text/header__text.css);
-@import url(./components/Header/__paragraph/header__paragraph.css);
-@import url(./components/Header/__restrictions/header__restrictions.css);
-@import url(./components/Header/restriction-number/restriction-number.css);
-
-
-
-/* @import url(./components/Header/Header.css); */
 @import url(./components/Map/Map.css);
 @import url(./components/CardList/CardList.css);
-/* @import url(./components/Footer/Footer.css); */
-
-
 @import url(./components/Footer/Footer.css);
-/* TODO Sara please move the following files to Footer.css  */
-@import url(./components/Footer/button/button.css);
-@import url(./components/Footer/_logo/footer_logo.css);
-@import url(./components/Footer/__row/footer__row.css);
-@import url(./components/Footer/__column/footer__column.css);
-@import url(./components/Footer/_logo/footer_logo.css);
-@import url(./components/Footer/__input/footer__input.css);
-@import url(./components/Footer/__input_email/footer__input_email.css);
-@import url(./components/Footer/__input_text/footer__input_text.css);
-@import url(./components/Footer/__apps/footer__apps.css);
-@import url(./components/Footer/__column_link/footer__column_link.css);
-@import url(./components/Footer/__app_icons/footer__app_icons.css);
-@import url(./components/Footer/__menu/footer__menu.css);
-@import url(./components/Footer/__copyright/footer__copyright.css);
-@import url(./components/Footer/__terms/footer__terms.css);
-@import url(./components/Footer/__privacy/footer__privacy.css);
-@import url(./components/Footer/__covid/footer__covid.css);
-@import url(./components/Footer/__contact/footer__contact.css);

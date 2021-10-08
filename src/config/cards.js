@@ -1,6 +1,9 @@
 import sequoiaImage from '../images/cardlist_sequoia.png';
 import bridgeImage from '../images/cardlist_bridge.png';
 import mojaveImage from '../images/cardlist_mojave.png';
+import antelopeImage from '../images/cardlist_antelope.png';
+import grandImage from '../images/cardlist_grand.png';
+import waveImage from '../images/cardlist_wave.png';
 
 const cards = [
   {
@@ -22,21 +25,21 @@ const cards = [
     }]
   },
   {
-    id:"TX",
-    name:"Texas",
-    url: "www.texas.com",
+    id:"AZ",
+    name:"Arizona",
+    url: "www.arizona.com",
     cards:[
     {
-      image: sequoiaImage,
-      title: "Sequoia park",
+      image: antelopeImage,
+      title: "Antelope canyon",
     },
     {
-        image: bridgeImage,
-        title: "Golden gate bridge",
+        image: grandImage,
+        title: "Grand canyon",
     },
     {
-        image: mojaveImage,
-        title: "Mojave",
+        image: waveImage,
+        title: "Wave canyon",
     }]
   }
 ];

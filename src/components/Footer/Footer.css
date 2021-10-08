@@ -1,3 +1,22 @@
+@import url(./button/button.css);
+@import url(./_logo/footer_logo.css);
+@import url(./__row/footer__row.css);
+@import url(./__column/footer__column.css);
+@import url(./_logo/footer_logo.css);
+@import url(./__input/footer__input.css);
+@import url(./__input_email/footer__input_email.css);
+@import url(./__input_text/footer__input_text.css);
+@import url(./__apps/footer__apps.css);
+@import url(./__column_link/footer__column_link.css);
+@import url(./__app_icons/footer__app_icons.css);
+@import url(./__menu/footer__menu.css);
+@import url(./__link/footer__link.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(./__terms/footer__terms.css);
+@import url(./__privacy/footer__privacy.css);
+@import url(./__covid/footer__covid.css);
+@import url(./__contact/footer__contact.css);
+
 .footer {
   max-width: 1440px;
   height: 272px;

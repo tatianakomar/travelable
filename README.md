@@ -1,78 +1,32 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-Add to package.json
-
-`"homepage": "https://tatianakomar.github.io/travelable",`
-
-Run in terminal
-
-`npm run deploy`
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ # Travelable
+### A web based application designed to provide relevant information on Covid-19 restrictions when travelling between US states.
+This is **Travelable**.
+Using our service, you can find out which restrictions US states have introduced, and how they differ between states. The service takes into account restrictions such as the openness of the state, the need to be vaccinated, whether cafes and restaurants are open, whether you need to quarantine etc. It is important that the information displayed in this service is up-to-date, and that the user can be confident in its accuracy. The service collects data from government websites that contain data on the availability of a particular state to visit, and displays this data on a map. You can also enter a specific state in the search and the service will display information on the restrictions in the selected state.
+Designed and developed as part of the ***Practicum by Yandex*** International Code Jam, October 2021.
+## Development Team
+[**Anastasia Vyshnevaya**](https://www.behance.net/A__V) - UX/UI Designer, Russia
+[**Tanya Komar**](https://github.com/tatianakomar) - Web Developer, USA
+[**Sara Ward**](https://github.com/warsdd) - Web Developer, UK
+## Built With
+[Create React App](https://github.com/facebook/create-react-app)
+## Features
+- Interactive map with selectors
+## Designs
+[Link to the project on Figma](https://www.figma.com/file/g5e3Rzr87NSfGUDlINfyH2/code-jam?node-id=218%3A1252)
+(All designs by *Anastasia Vyshnevaya*)
+## View Online
+[See the live Github page here](https://tatianakomar.github.io/travelable/)
+## Run Locally
+Run `yarn start` for development mode and view the project at http://localhost:3000.
+## Next Steps
+- Implement scrolling animation in header image
+- Include link destinations to all links
+- Add mobile compatibility
+- Search for a state on the map and in searching field
+- Entering the state in the search
+- Displaying Covid-19 statistics per state
+- Update email field with log of email address
+- Include personal accounts with user information and subscription on news about restrictions
+- Add site version for the visually impaired
+- Add additional language options
+- Develop for more regions!
