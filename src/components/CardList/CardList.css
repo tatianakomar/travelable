@@ -80,6 +80,17 @@
   align-items: center;
   width: 302px;
   height: 67px;
+  cursor: pointer;
+}
+
+.card-list__offer:hover {
+  background-color: #FFE8CB;
+  transition: background-color 0.2s linear;
+}
+
+.card-list__offer:active {
+  background-color: #804901;
+  color: #fff;
 }
 
 .card-list__offer-link {

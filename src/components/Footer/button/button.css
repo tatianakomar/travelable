@@ -18,12 +18,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s linear;
+    transition: background-color 0.2s linear;
     cursor: pointer;
     margin-left: 24px;
     padding: 0;
   }
   
   .button:hover {
-    background-color: #945d14;
+    background-color: #814901;
   }
