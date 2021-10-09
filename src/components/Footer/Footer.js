@@ -26,14 +26,15 @@ function Footer() {
           </ul>
         </div>
         <div className="footer__apps">
-          <button className="footer__column_link" target="_blank">
+
+          <a href="https://www.apple.com/app-store/" className="footer__column_link" target="_blank">
             <img className="footer__app_icons" src="images/app_store.svg"
               alt="Apple App Store icon, white outline of an apple"></img>
-          </button>
-          <button className="footer__column_link" target="_blank">
+          </a>
+          <a href="https://play.google.com/store" className="footer__column_link" target="_blank">
             <img className="footer__app_icons" src="images/google_play.svg"
               alt="Google Play background"></img>
-          </button>
+            </a>
         </div>
       </div>
     </footer>

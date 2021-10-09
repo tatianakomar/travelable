@@ -16,8 +16,13 @@ function Header() {
                 <section className="header__nav">
                     <img className="header_logo" src="images/header_logo.svg" alt="Travel Able text logo"></img>
                     <div className="header__nav_menu">
+                        <a href="#header__link" className="header__link">
                         <img className="header_eye" src="./images/header_eye.svg" alt="logo of eye, which toggles site for the visually impaired"></img>
+                        </a>
+                        <a href="#header__link" className="header__link">
                         <img className="header_planet" src="images/header_planet.svg" alt="logo of eye, which toggles site in different languages"></img>
+                        </a>
+
                     </div>
                     {/*links to adapted site for the visually impaired and different languages to be added in future*/}
                 </section>

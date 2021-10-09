@@ -1,5 +1,5 @@
 .map {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: auto;
     padding: 160px 80px 160px;
 }
@@ -38,6 +38,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
 .map__checkbox {
@@ -74,6 +75,7 @@
     border: 1px solid #0A3655;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .map__checkbox input:checked ~ .map__checkmark {
@@ -102,6 +104,7 @@
 
 .map__question-mark {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .map__button {
@@ -113,6 +116,7 @@
     font-weight: 300;
     color: #C9A575;
     background-color: #EEC288;
+    transition: background-color 0.2s linear;
     border: none;
     border-radius: 8px;
     margin: 0;
